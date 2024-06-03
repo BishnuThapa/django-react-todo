@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import TodoForm from './components/TodoForm'
+import Table from './components/Table'
 
 function App() {
 
@@ -11,6 +13,9 @@ function App() {
 
       <h2 className='text-5xl text-center'>Hello From Bishnu Thapa</h2>
       </nav>
+      <TodoForm />
+      <Table />
+
     </div>
   )
 }
