@@ -23,16 +23,14 @@ function App() {
   }
 
   return (
-    <div className='bg-indigo-100 px-8 min-h-screen'>
-      <nav className='pt-8'>
-
-      <h2 className='text-5xl text-center pb-8'>Todo List</h2>
+    <div className="bg-indigo-100 px-8 min-h-screen">
+      <nav className="pt-8">
+        <h2 className="text-5xl text-center pb-8">Todo List</h2>
       </nav>
-      <TodoForm />
+      <TodoForm setTodos={setTodos} fetchData={fetchData()} />
       <Table todos={todos} setTodos={setTodos} />
-
     </div>
-  )
+  );
 }
 
 export default App
